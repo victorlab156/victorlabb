@@ -1,0 +1,215 @@
+body {
+    font-family: "Prompt", sans-serif;
+    line-height: 1.6;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+}
+
+h1 {
+    font-family: "Odibee Sans", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+h2 {
+    font-family: "Odibee Sans", sans-serif;
+    
+    font-size: 30px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+body {
+    
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+p {
+    
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+img { 
+    margin: 20px; 
+    box-shadow: #282524 0px 22px 70px 4px;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+        
+    }
+
+
+
+
+.secondary {
+color: #da7003;
+text-align: center;
+    
+}
+
+.tersiary {
+
+
+}
+
+.fond {
+   background-color: #da7003;
+
+}
+
+.fondsecondary {
+background-color:#282524;
+
+}
+
+.logo h1 {
+ text-align: left;
+width: 40%;
+padding: 0px 10px;
+}
+
+.titre h1 {
+    width: 60%;
+text-align: right;
+padding: 0px 10px;
+}
+
+.soustitre {
+width: 50%;
+float: right;
+
+}
+
+.titre2 {
+display:flex;
+justify-content: right;
+
+
+}
+
+footer {
+display: flex;
+justify-content: center;
+
+}
+
+.cadre {
+display: flex;
+justify-content: center;
+border: 2px solid #282524;
+padding: 10px;
+background-color: #282524;
+color: #da7003;
+width: 200px;
+}
+
+
+
+
+.cadre:hover {
+background-color: #da7003;
+color: #282524;
+
+}
+
+.cadre a {
+color: #da7003;
+
+}
+
+.cadre:hover a {
+color: #282524;
+
+}
+
+.cadre-container {
+display: flex;
+justify-content: center;
+
+}
+
+.images img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+@media screen and (max-width: 1650px) {
+    .center {
+        flex-wrap: wrap;
+    }
+} 
+    
+@media screen and (max-width: 1000px) {
+    .soustitre {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .soustitre {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .images img {
+        width: 600px;
+       
+    }
+    
+}
+
+h1:hover, strong:hover, h2.secondary:hover {
+    animation: changeColor 0.5s forwards;
+
+}
+
+@keyframes changeColor {
+    from {
+        color: #da7003;
+    }
+    to {
+        color:white;
+    }
+
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.02);
+    }
+}
+
+img:hover {
+    cursor: pointer;
+    animation: zoomin 0.3s forwards ease-out;
+}
